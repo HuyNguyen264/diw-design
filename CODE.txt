@@ -1,0 +1,188 @@
+	CODE TRANG EPLORE
+
+
+
+
+style:
+
+#page-header{
+	width: 100%;
+	min-height: 300px;
+	background-image: url("../images/about-us-page-heading.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.caption{
+	color: white;
+	text-align: center;
+	width: 30%;
+	position: absolute
+}
+#about .social-icon{
+	height: 45px;
+	width: 100%;
+	display: flex;
+	margin-top: 40px;
+	
+}
+#about .social-icon .box{
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 50%;
+	margin-right: 20px;
+	
+}
+#about .social-icon .box a{
+	color: white;
+	text-decoration: none;
+	
+}
+#about .social-icon .box:hover{
+	background-color: #c5c5c5;
+	
+}
+#about .social-icon .box:hover a{
+	color: black;
+}
+#team .team{
+	position: relative;
+	
+}
+#team .team-cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.60);
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.8s;
+}
+#team .social{
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#team .social a{
+	height: 45px;
+	width: 45px;
+	background-color:white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color:black;
+}
+#team .social a:hover{
+	background-color: gray;
+	color: white;
+}
+#team .team:hover .team-cover{
+	opacity: 1;
+}
+
+Code:
+<main>
+  <section id="page-header">
+    <div class="caption">
+      <h1>About Our Company</h1>
+      <p><i>Awesome, clean & creative HTML5 Template</i></p>
+    </div>
+  </section>
+  <section id="about" class="border-bot py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-3"> <img src="images/about-left-image.jpg" alt="" class="img-fluid"> </div>
+        <div class="col-lg-6 mb-3">
+          <h1>About Us & Our Skill</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo deleniti ratione, quia totam animi blanditiis facilis laboriosam modi. Magnam ratione quam natus totam dolorum non impedit inventore velit sunt.</p>
+          <p class="d-flex align-items-center"><i class="fas fa-quote-left fa-2x me-3"></i><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, itaque dignissimos hic. Pariatur quam earum, adipisci amet nisi vel, itaque repellat excepturi nulla saepe quo nobis animi iusto omnis necessitatibus.</i></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos incidunt blanditiis, saepe similique consectetur autem adipisci eveniet perferendis asperiores, officiis at voluptas vero aperiam tempora numquam explicabo veniam, ducimus, sit.</p>
+          <div class="border-bot"></div>
+          <div class="social-icon">
+            <div class="box"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="box"><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <div class="box"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="box"><a href="#"><i class="fab fa-behance"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="border-bot py-4">
+    <div class="container">
+      <h1 class="text-center">Our Team</h1>
+      <div class="row">
+        <div class="col-lg-4 mb-3 text-center">
+          <div class="team"> <img src="images/team-member-01.jpg" alt="" class="img-fluid">
+            <div class="team-cover">
+              <div class="social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-behance"></i></a> </div>
+            </div>
+          </div>
+          <h4 >Ragnar Lodbrok</h4>
+          <p><i>Product Caretaker</i></p>
+        </div>
+        <div class="col-lg-4 mb-3 text-center">
+          <div class="team"> <img src="images/team-member-02.jpg" alt="" class="img-fluid">
+            <div class="team-cover">
+              <div class="social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-behance"></i></a> </div>
+            </div>
+          </div>
+          <h4 >Ragnar Lodbrok</h4>
+          <p><i>Product Caretaker</i></p>
+        </div>
+        <div class="col-lg-4 mb-3 text-center">
+          <div class="team"> <img src="images/team-member-03.jpg" alt="" class="img-fluid">
+            <div class="team-cover">
+              <div class="social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-behance"></i></a> </div>
+            </div>
+          </div>
+          <h4 >Ragnar Lodbrok</h4>
+          <p><i>Product Caretaker</i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service" class="py-4">
+    <div class="container">
+      <h1 class="text-center">Our Services</h1>
+      <p class="text-center"><i>Details to details is what makes Hexashop different from the other themes.</i></p>
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <div class="shadow bg-light text-center p-3">
+            <h4 class="pt-3">Synther Vaporware</h4>
+            <p><i>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</i></p>
+            <img src="images/service-01.jpg" alt="" class="img-fluid"> </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <div class="shadow bg-light text-center p-3">
+            <h4 class="pt-3">Locavore Squidward</h4>
+            <p><i>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</i></p>
+            <img src="images/service-02.jpg" alt="" class="img-fluid"> </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <div class="shadow bg-light text-center p-3">
+            <h4 class="pt-3">Health Gothfam</h4>
+            <p><i>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</i></p>
+            <img src="images/service-03.jpg" alt="" class="img-fluid"> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
